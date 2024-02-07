@@ -12,6 +12,7 @@ inline std::unordered_map<std::string, data> settings;
 namespace config {
 
     const std::string config_folder_name = "program_name";
+    const std::string config_ext = ".cfg";
 
     inline std::vector<std::string> config_names;
     inline std::string config_folder_path;

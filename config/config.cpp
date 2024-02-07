@@ -30,7 +30,7 @@ void config::init() {
 
 void config::get_config_names() {
     for (const auto& entry : std::filesystem::directory_iterator(config::config_folder_path)) {
-        if (entry.is_regular_file() && entry.path().extension() == ".cfg")
+        if (entry.is_regular_file() && entry.path().extension() == config::config_ext)
             config::config_names.push_back(entry.path().string());
     }
 }
